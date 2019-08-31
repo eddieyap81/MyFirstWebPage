@@ -1,4 +1,85 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
-body {
+.header {
+  position:relative;
+  width: 100%;
+  overflow: hidden;
+  height: 105vh;
+  padding-top: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+  position: absolute;
+  transform: all 0.3s;
+  background: white;
+  z-index: 9;
+  top: 0px;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav ul li {
+  display: flex;
+}
+
+.nav ul li a {
   font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  color: blue;
+  padding: 0.25rem 0;
+  margin: 0 1.80rem;
+  text-transform: uppercase;
+}
+
+.nav ul li.logo .black {
+  display: none;
+}
+
+.nav ul li.logo a {
+  margin: 0 4rem;
+}
+
+.nav-icon {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  padding: 5px;
+  width: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  background: black;
+  width: 30px;
+  height: 1px;
+  display: block;
+  transition: 300ms linear all;
+}
+
+.nav-icon span:nth-child(1),
+.nav-icon span:nth-child(3) {
+  width: 20px;
+  margin: 0 auto;
+}
+
+.nav-icon span:nth-child(2) {
+  margin: 5px 0;
+  width: 32px;
+}
+
+.nav-icon:hover span:nth-child(1),
+.nav-icon:hover span:nth-child(3) {
+  width: 32px;
 }
