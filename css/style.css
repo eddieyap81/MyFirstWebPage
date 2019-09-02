@@ -1,3 +1,7 @@
+a:hover {
+  text-decoration: none;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -42,6 +46,10 @@ html {
   text-transform: uppercase;
 }
 
+.nav ul li.logo img {
+  width: 125px
+}
+
 .nav ul li.logo .black {
   display: none;
 }
@@ -82,4 +90,228 @@ html {
 .nav-icon:hover span:nth-child(1),
 .nav-icon:hover span:nth-child(3) {
   width: 32px;
+}
+
+.full-nav {
+  background: #cfe37d;
+  color: #e69a5c;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 3.75rem;
+  z-index: 99;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all .4s ease-in-out;
+}
+
+.full-nav.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: all .4s ease-in-out;
+  z-index: 99;
+}
+
+.full-nav .logo {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: center;
+}
+
+.nav2 ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+.nav2 ul li {
+  display: flex;
+  flex: 50%;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-bottom: 10px solid #cfe37d;
+  border-right: 10px solid #cfe37d;
+  transition: all .5s;
+}
+
+.nav2 ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  color: #081d77;
+  padding: 0.25rem 0;
+  margin: 0 1.80rem;
+  text-transform: uppercase;
+}
+
+.nav2 ul li a span {
+  color: #b4a5a5;
+}
+
+.nav2 ul li:hover {
+  background-color: #0b898c;
+}
+
+.nav2 ul li:hover a,
+.nav2 ul li:hover a span {
+  color: white;
+}
+
+.social-icons a {
+  color: white;
+  border: 4px solid white;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  font-size: 20px;
+  display: inherit;
+  text-align: center;
+  border-radius: 50px;
+  transition: all ease 1s;
+  margin-top: 40px;
+}
+
+.social-icons a:hover i{
+  color: #000000;
+  margin-top: -10px;
+  border-color: #000000;
+}
+
+.social-icons a:hover {
+  color: #000000;
+  margin-top: -10px;
+  border-color: #000000;
+}
+
+ul.social-icons.list-inline {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.corner-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 0 0 0 120px;
+  z-index: 2;
+}
+
+.nav-close {
+  display: block;
+  width: 30px;
+  height:30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.nav-close span {
+  background: #18191d;
+  width: 30px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 14px;
+}
+
+.nav-close span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.nav-close span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.nav.sticky {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.35);
+  animation-name: animationFade;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes animationFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0,-100%,0;);
+    transform: translate3d(0,-100%,0;);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+  }
+}
+
+.nav.sticky a {
+  color: #181b1d;
+}
+
+.nav.sticky ul li.logo .white {
+  display: none;
+}
+
+.nav.sticky ul li.logo .black {
+  display: inline-block;
+}
+
+.nav.sticky .nav-icon span {
+  background: #18191d;
+}
+
+video #herovideo {
+  width:100%
+}
+
+.bx-wrapper .social-icons a {
+  color: white;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: inherit;
+  text-align: center;
+  padding-top: 5px;
+  transition: all ease 1s;
+  background: #000000;
+  border-radius: 0px;
+}
+
+.bx-wrapper .social-icons a i {
+  position: relative
+  bottom: 7px;
+}
+
+.vidContent {
+  position: absolute;
+  top: 290px;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+
+
 }
