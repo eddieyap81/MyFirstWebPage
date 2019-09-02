@@ -18,7 +18,7 @@ html {
 .nav {
   display: flex;
   justify-content: center;
-  padding: 20px 30px;
+  padding: 15px 15px;
   position: absolute;
   transform: all 0.3s;
   background: white;
@@ -40,7 +40,8 @@ html {
 .nav ul li a {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
-  color: blue;
+  font-weight: bold;
+  color: lightblue;
   padding: 0.25rem 0;
   margin: 0 1.80rem;
   text-transform: uppercase;
@@ -312,6 +313,70 @@ video #herovideo {
   width: 100%;
   padding: 10px;
   text-align: left;
+}
 
+.vidContent h1 {
+  font-family: 'Acme', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: #7e92e9;
+  text-decoration: uppercase;
+  letter-spacing: 2px;
+}
 
+.vidContent p {
+  font-family: 'Raleway', sans-serif;
+}
+
+#vidBtn {
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 40px;
+  border-radius: none;
+  background: white;
+  color: #b13c3c;
+  cursor: pointer;
+  margin-top: 18px;
+  border-radius: 30px;
+  animation: shadow-pulse 2s infinite;
+  text-transform: uppercase;
+}
+
+@keyframes shadow-pulse {
+  0% {box-shadow: 0 0 0 0px rgba(0,0,0,0.1);}
+  100% {box-shadow: 0 0 0 10px rgba(0,0,0,0);}
+}
+
+#vidBtn:hover {
+  background: #b13c3c;
+  color: white;
+  animation: none;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: #333333 !important;
+  border: 4px solid white;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  font-size: 20px;
+  display: inherit;
+  text-align: center;
+  border-radius: 50px;
+  transition: all ease 1s;
+  margin-top: 40px;
+  background: white !important;
+}
+
+ul.social-icons.list-inline {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.list-inline>li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
 }
