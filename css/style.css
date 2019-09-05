@@ -284,7 +284,7 @@ ul.social-icons.list-inline {
 }
 
 video #herovideo {
-  width:100%
+  width:100%;
 }
 
 .bx-wrapper .social-icons a {
@@ -302,7 +302,7 @@ video #herovideo {
 }
 
 .bx-wrapper .social-icons a i {
-  position: relative
+  position: relative;
   bottom: 7px;
 }
 
@@ -310,16 +310,16 @@ video #herovideo {
   position: absolute;
   top: 290px;
   color: black;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   text-align: left;
 }
 
 .vidContent h1 {
   font-family: 'Acme', sans-serif;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
-  color: #7e92e9;
+  color: #061450;
   text-decoration: uppercase;
   letter-spacing: 2px;
 }
