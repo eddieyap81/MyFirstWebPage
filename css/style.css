@@ -18,7 +18,8 @@ html {
 .nav {
   display: flex;
   justify-content: center;
-  padding: 15px 15px;
+  padding-top: 12px;
+  padding-bottom: 3px;
   position: absolute;
   transform: all 0.3s;
   background: white;
@@ -41,9 +42,9 @@ html {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
   font-weight: bold;
-  color: lightblue;
+  color: darkblue;
   padding: 0.25rem 0;
-  margin: 0 1.80rem;
+  margin: 10px 1.80rem;
   text-transform: uppercase;
 }
 
