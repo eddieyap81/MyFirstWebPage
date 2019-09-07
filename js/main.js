@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $(".nav-icon").click(function() {
-    console.log("good")
     $(".full-nav").addClass("open");
   });
 
@@ -28,4 +27,13 @@ $(document).ready(function() {
     maxSlides: 1,
     speed: 1200,
   });
+
+  $("#work").magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
+
 });

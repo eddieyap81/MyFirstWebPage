@@ -450,3 +450,39 @@ p.text-secondary {
 #contents {
   margin-top: -400px;
 }
+
+#work h3 {
+  font-family: 'Acme', sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  color: #6c757d !important;
+}
+
+.row.no-gutters [class*=col-] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  transition: transform .5s ease;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}

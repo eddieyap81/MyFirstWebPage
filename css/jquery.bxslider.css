@@ -67,7 +67,6 @@ ul.bxslider {
 
 }
 
-
 .bx-wrapper .social-icons a:hover{
     border: 1px solid white;
 }
@@ -90,7 +89,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
   *zoom: 1;
   *display: inline;
 }
